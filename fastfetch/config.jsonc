@@ -1,0 +1,70 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+  "logo": {
+    "type": "kitty-direct",
+    "source": "~/.config/fastfetch/andor-icon.png",
+    "width": 24,
+    "height": 10,
+    "padding": {
+      "top": 2,
+      "left": 2,
+    },
+  },
+
+  "display": {
+    "separator": "  ",
+    "color": {
+      "keys": "blue",
+      "title": "magenta",
+    },
+  },
+
+  "modules": [
+    {
+      "type": "title",
+      "color": {
+        "user": "magenta",
+        "host": "blue",
+      },
+    },
+    "separator",
+    { "type": "os", "key": "󰀵 OS", "keyColor": "blue" },
+    { "type": "host", "key": "󰀹 Mac", "keyColor": "blue" },
+    { "type": "kernel", "key": "󰒓 Kernel", "keyColor": "blue" },
+    { "type": "uptime", "key": "󱫐 Uptime", "keyColor": "blue" },
+    { "type": "packages", "key": "󰏗 Packages", "keyColor": "blue" },
+    { "type": "shell", "key": "󰆍 Shell", "keyColor": "blue" },
+
+    "break",
+
+    {
+      "type": "display",
+      "key": "󰍹 Display",
+      "keyColor": "magenta",
+      "compactType": "original",
+    },
+    { "type": "terminal", "key": " Terminal", "keyColor": "magenta" },
+    { "type": "terminalfont", "key": " Font", "keyColor": "magenta" },
+    { "type": "wm", "key": "󰘔 WM", "keyColor": "magenta" },
+
+    "break",
+
+    { "type": "cpu", "key": " CPU", "keyColor": "green" },
+    { "type": "gpu", "key": "󰢮 GPU", "keyColor": "green" },
+    { "type": "memory", "key": " Memory", "keyColor": "green" },
+    {
+      "type": "disk",
+      "key": "󰋊 Disk",
+      "keyColor": "green",
+      "format": "{1} / {2} ({3}%)",
+    },
+    { "type": "swap", "key": "󰓡 Swap", "keyColor": "green" },
+
+    "break",
+
+    { "type": "battery", "key": " Battery", "keyColor": "yellow" },
+    { "type": "poweradapter", "key": "󰚥 Power", "keyColor": "yellow" },
+    { "type": "locale", "key": "󰗊 Locale", "keyColor": "yellow" },
+  ],
+}

@@ -1,0 +1,109 @@
+{
+  // ── EDITOR: core typing ──────────────────────
+  "editor.fontFamily": "'JetBrains Mono', Menlo, monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.8,
+  "editor.letterSpacing": 0.5,
+  "editor.tabSize": 2,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.linkedEditing": true,
+  "editor.stickyScroll.enabled": false,
+  "editor.rulers": [100],
+
+  // ── FORMAT & FIX ON SAVE ─────────────────────
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+  },
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+
+  // ── TYPESCRIPT / JAVASCRIPT ──────────────────
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  // ── EMMET: JSX expansion ─────────────────────
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact",
+  },
+
+  // ── FILES: clean diffs ───────────────────────
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.tsx": "${capture}.module.css, ${capture}.module.scss, ${capture}.test.tsx, ${capture}.stories.tsx",
+    "*.ts": "${capture}.test.ts, ${capture}.spec.ts",
+    "package.json": "package-lock.json, pnpm-lock.yaml, yarn.lock, .nvmrc, tsconfig*.json, vite.config*, .eslintrc*, eslint.config*, .prettierrc*",
+  },
+
+  // ── TERMINAL ────────────────────────────────────
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.profiles.osx": {
+    "bash": {
+      "path": "bash",
+      "icon": "terminal-bash",
+    },
+    "zsh": {
+      "path": "/bin/zsh",
+      "args": ["-l"],
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux",
+    },
+    "pwsh": {
+      "path": "pwsh",
+      "icon": "terminal-powershell",
+    },
+  },
+
+  // ── UI: minimal ──────────────────────────────
+  "editor.minimap.enabled": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.renderWhitespace": "selection",
+  "breadcrumbs.enabled": false,
+  "workbench.activityBar.location": "top",
+  "workbench.editor.showTabs": "single",
+  "workbench.startupEditor": "none",
+
+  // ── THEME ────────────────────────────────────
+  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "workbench.iconTheme": "material-icon-theme",
+
+  // ── GIT & PRIVACY ────────────────────────────
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "telemetry.telemetryLevel": "off",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmPasteNative": false,
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "chat.titleBar.openInAgentsWindow.enabled": false,
+  "workbench.browser.showInTitleBar": false,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.statusBar.visible": false,
+  "security.workspace.trust.untrustedFiles": "open",
+}
+
