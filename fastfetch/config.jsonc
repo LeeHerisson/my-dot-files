@@ -7,7 +7,7 @@
     "width": 24,
     "height": 10,
     "padding": {
-      "top": 2,
+      "top": 1,
       "left": 2,
     },
   },
@@ -29,24 +29,18 @@
       },
     },
     "separator",
-    { "type": "os", "key": "󰀵 OS", "keyColor": "blue" },
+    "break",
+
+    { "type": "os", "key": "󰀵 OS", "keyColor": "blue", "format": "{3}" },
     { "type": "host", "key": "󰀹 Mac", "keyColor": "blue" },
     { "type": "kernel", "key": "󰒓 Kernel", "keyColor": "blue" },
     { "type": "uptime", "key": "󱫐 Uptime", "keyColor": "blue" },
-    { "type": "packages", "key": "󰏗 Packages", "keyColor": "blue" },
-    { "type": "shell", "key": "󰆍 Shell", "keyColor": "blue" },
 
     "break",
 
-    {
-      "type": "display",
-      "key": "󰍹 Display",
-      "keyColor": "magenta",
-      "compactType": "original",
-    },
+    { "type": "packages", "key": "󰏗 Packages", "keyColor": "magenta" },
+    { "type": "shell", "key": "󰆍 Shell", "keyColor": "magenta" },
     { "type": "terminal", "key": " Terminal", "keyColor": "magenta" },
-    { "type": "terminalfont", "key": " Font", "keyColor": "magenta" },
-    { "type": "wm", "key": "󰘔 WM", "keyColor": "magenta" },
 
     "break",
 
@@ -57,14 +51,8 @@
       "type": "disk",
       "key": "󰋊 Disk",
       "keyColor": "green",
-      "format": "{1} / {2} ({3}%)",
+      "format": "{1} / {2} ({3})",
     },
     { "type": "swap", "key": "󰓡 Swap", "keyColor": "green" },
-
-    "break",
-
-    { "type": "battery", "key": " Battery", "keyColor": "yellow" },
-    { "type": "poweradapter", "key": "󰚥 Power", "keyColor": "yellow" },
-    { "type": "locale", "key": "󰗊 Locale", "keyColor": "yellow" },
   ],
 }
